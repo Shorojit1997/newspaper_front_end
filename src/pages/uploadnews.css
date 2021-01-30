@@ -1,0 +1,139 @@
+.contain{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+button{
+    height: 30px;
+}
+.upload_form{
+	position: relative;
+	display: flex;
+	max-width: 1060px;
+	width: 100%;
+	height: auto;
+	margin-top: 80px;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.selecting_bar{
+	position: relative;
+	flex:40%;
+	max-width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #eee;
+	border-right: 1px solid #ccc;
+	margin-bottom: 20px;
+	height:350px;
+}
+.selecting_bar h2{
+	width: 100%;
+	/*border:1px solid black;*/
+	background: #16A085;
+	height: 40px;
+	color:white;
+	font-family: all;
+	text-align: center;
+}
+.selecting_bar button{
+	width: 90%;
+	/*border:1px solid black;*/
+	background: #16A085;
+	color:white;
+	font-family: all;
+	border:1px solid gray;
+	border-radius: 5px ;
+	text-align: center;
+	margin:20px 0px;
+}
+.selecting_bar button:hover {
+	background: #0E6655;
+	color:white;
+}
+.form{
+	width: 100%;
+	height: 200px;
+/*	border:1px solid black;*/
+	color:black;
+	font-size: 20px;
+	font-family: all;
+	text-align: center;
+}
+.form select{
+	max-width: 200px;
+	width: 90%;
+	margin:10px;
+}
+
+.uploading_body{
+	position: relative;
+	flex:60%;
+	max-width: 60%;
+	margin:0px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.uploading_body h2{
+	width: 100%;
+	height:40px;
+	color: white;
+	background: #16A085;
+	text-align: center;
+}
+.input_form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.input_form label{
+	margin-top: 20px;
+}
+#author{
+	width: 100%;
+	height: 30px;;
+}
+#title{
+	width: 100%;
+	height:100px;
+	overflow: scroll;
+	vertical-align:top;
+}
+#discription{
+	width: 100%;
+	height:300px;
+	overflow: scroll;
+	vertical-align:top;
+}
+.bttn{
+	max-width: 220px;
+	width: 100%;
+	background-color:  #16A085;
+	margin-top: 30px;
+	color: white;
+	border:1px solid gray;
+	border-radius: 5px;
+    height: 30px;
+}
+.bttn:hover{
+	background: #0E6655;
+}
+@media screen and (max-width: 740px){
+
+	.upload_form{
+		flex-direction: column;
+	}
+	.selecting_bar,.uploading_body{
+		flex:100%;
+		max-width:100%;
+	}
+	.uploading_body{
+		background-color: rgb(236, 233, 233);
+		
+	}
+}
