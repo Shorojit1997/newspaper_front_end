@@ -24,7 +24,7 @@ const RoutePage = () => {
                         items.map(data => {
                             const pathname= '/news/'+data.item+'/:slug';
                             return (
-                                <Route key={data._id} path={pathname}  > <ShowPost catagory={data.item} /></Route>
+                                <Route key={data._id} exact path={pathname}  > <ShowPost catagory={data.item} /></Route>
                             )
                         })
                         
@@ -33,7 +33,7 @@ const RoutePage = () => {
                         items.map(data => {
                             const pathname= '/news/'+data.item;
                             return (
-                                <Route key={data._id} path={pathname}  > <HomePage catagory={data.item} /></Route>
+                                <Route key={data._id} exact path={pathname}  > <HomePage catagory={data.item} /></Route>
                             )
                         })
                     }

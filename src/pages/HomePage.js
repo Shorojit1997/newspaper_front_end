@@ -1,13 +1,13 @@
 import axios from 'axios';
 import React from 'react';
 import { useState, useEffect } from 'react'
-import { useHistory, useRouteMatch, useParams, Switch, Route } from 'react-router-dom'
+import { useHistory, useRouteMatch } from 'react-router-dom'
 import './homepage.css'
 
 const HomePage = (props) => {
     const history = useHistory();
     const [items, setItems] = useState([]);
-    const {path, url } = useRouteMatch();
+    const {url } = useRouteMatch();
     const Url = "http://localhost:4000/news/article/" + props.catagory;
 
     useEffect(() => {
